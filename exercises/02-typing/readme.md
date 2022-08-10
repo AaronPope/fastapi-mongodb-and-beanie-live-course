@@ -4,7 +4,9 @@ In this exercise, you'll take a simple **[7-way rock paper scissors](http://retr
 
 ## Steps
 
-Open the folder `rocks-game` and open `rpsgame.py`. Go through each **variable**, **function parameter**, and **function return value**. See if your editor can understand what they are or detect errors (for example, return a string where a number is expected or visa versa). 
+* Open the folder `rocks-game` and open `rpsgame.py`.
+* Go through each **variable**, **function parameter**, and **function return value**. 
+  * See if your editor can understand what they are or detect errors (for example, return a string where a number is expected or visa versa). 
 
 You will need to use nested types for certain containers, such as:
 
