@@ -1,0 +1,10 @@
+requests
+pydantic
+colorama
+# uvloop
+bs4
+httpx
+beanie
+email-validator
+progressbar2
+python-dateutil
