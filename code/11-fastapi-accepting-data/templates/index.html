@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FastAPI PyPI API</title>
+    <link rel="stylesheet" href="/static/site.css">
+</head>
+<body>
+
+<h1>{{ title }}</h1>
+
+<p>Welcome to our API. Here are some examples</p>
+
+<div>
+    <ul>
+        <li>Package count: <a href="/api/packages/count">/api/packages/count</a></li>
+        <li>Package details: <a href="/api/packages/details/fastapi">/api/packages/details/{package_name}</a></li>
+        <li>Package search: <a href="/api/packages/search/fastapi">/api/packages/search/{single_keyword}</a></li>
+        <li>Create user: <a href="/api/users">POST /api/users</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
