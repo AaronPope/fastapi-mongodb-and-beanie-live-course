@@ -28,7 +28,7 @@ async def main():
     print("Enter the data folder path, e.g. '/Users/mk/Desktop/pypi-raw-data/pypi-top-5k'")
     data_folder = input("Data folder path: ").strip()
 
-    await mongo_setup.global_init(database='pypi')
+    await mongo_setup.init_db(database='pypi')
     await User.delete_all()
     await Package.delete_all()
     await package_svc.reset_release_count()
@@ -157,7 +157,7 @@ async def load_package(data: dict):
     try:
         info = data.get('info', {})
 
-        package_name = data.get('info', {}).get('name', '').strip()
+        package_name = data.get('info', {}).get('name', '').strip().lower()
         if not package_name:
             return
 
